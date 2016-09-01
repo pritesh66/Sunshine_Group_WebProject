@@ -1,0 +1,278 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Business Frontpage - Start Bootstrap Template</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/business-frontpage.css" rel="stylesheet">
+
+        <link type="text/css" href="css/jquery.mmenu.all.css" rel="stylesheet" />
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+             <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBBTFrFWrhHGmMO8SXKnnsmK2KHbabtcwc"></script>
+        <script src="js/jquery.mmenu.all.min.js"></script>
+
+
+
+
+
+        <![endif]-->
+
+
+        <script>
+            function initialize() {
+                var mapProp = {
+                    center:new google.maps.LatLng(40.7183564,-74.0462856),
+                    zoom:10,
+                    mapTypeId:google.maps.MapTypeId.ROADMAP
+                };
+                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+    </head>
+
+    <body>
+
+    <div id="top">
+        <label>Call Us: <span style="color: #8c8c8c;">603-742-2424</span> </label>
+        <button type="submit" id="aptButton" class="btn btn-success">Make an appointment</button>
+        <button type="submit" id="patientButton" class="btn btn-success">Patient Portal</button>
+
+    </div>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-inverse" id="menu" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">OUR PROVIDERS</a>
+                        </li>
+                        <li>
+                            <a href="#">TREATMENT AND CARE</a>
+                        </li>
+                        <li>
+                            <a href="#">RESOURCES</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">LOCATIONS</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Image Background Page Header -->
+        <!-- Note: The background image is set within the business-casual.css file. -->
+        <header class="business-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <label class="tagline">Contact Us</label>
+                        <p id="exp">Please complete the form below to<br>
+                            contact Sunshine Group</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <div class="container">
+
+
+
+            <div class="row">
+                <div class="col-sm-8">
+
+                    <form>
+                    <label>Are you current patient of Sunshine Group?<span style="color:#00cc88">*</span></label>
+                    <input type="radio" name="patientStatus" value="yes" id="yesVal"> Yes
+                    <input type="radio" name="patientStatus" value="no" id="noVal"> No
+                        <br><br>
+                        <div id="firstNameDiv" class="form-group">
+                            <input type="text" id="firstname" class="form-control" placeholder="First Name*">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lastname" class="form-control" placeholder="Last Name*">
+                        </div>
+                        <div id="emailDiv" class="form-group">
+                            <input type="text" id="email" class="form-control" placeholder="Email*">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="phone" class="form-control" placeholder="Phone*">
+                        </div>
+                        <select id="subject" class="form-control" style="color: #a6a6a6">
+                            <option value="default">Subject*</option>
+                        </select>
+                        <div id="textarea">
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Comments*"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <select name="select_source" id="select_source" class="form-control" style="color: #a6a6a6">
+                                <option value="default">How did you hear about us?*</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="referral" class="form-control" placeholder="Additional Referral Details">
+                        </div>
+                        <label id="msg" style="color: #00cc99">Fields are required*</label>
+                        <button type="submit" id="button" class="btn btn-success">Send</button>
+                    </form>
+
+                    <div id="success">Form Submitted Successfully</div>
+                    <br>
+                    <p>Please be aware that we cannot ensure that communications sent over the internet are secure. This
+                    includes correspondence sent through this form or by the email. If you are comfortable with such risks
+                    you may contact us by phone instead of using this form. Do not include any Confidential Health
+                    information</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 style="color:#00cc99; margin-top: 30px; font-weight: 200 ">Office:</h3>
+                    <div id="googleMap"></div>
+                    <address>
+                        <br>Sunshine Group Health, P.A
+                        <br>100 Left Avenue, Sunchine, NY
+                        <br>
+                        <br>Tel 800-777-2424
+                    </address>
+                </div>
+            </div>
+
+        </div>
+            <!-- Footer -->
+            <footer >
+                <div class="row">
+
+                        <p id="footerText">Sunshine Group Health, P.A - 100 Left Ave, Sunchine, NY - Phone: 617-800-7373</p>
+
+                </div>
+                <!-- /.row -->
+            </footer>
+
+
+        <!-- /.container -->
+
+
+    <script>
+
+        var k = 0;
+
+        if($(window).width()<416 && k==0){
+            $("body").prepend("<div id='mobileContact'>Call: 603-742-2424</div>");
+            k=1;
+        }
+
+        // Function on click for form submission
+
+        $("#button").click(function(event){
+
+            $('.err').remove(); //to remove earlier error display
+
+            event.preventDefault();
+            var firstName = $("#firstname").val(),
+                    email = $("#email").val(),
+                    comment = $("#comment").val();
+
+            //ajax to post request to validation.php file
+
+            $.post("validation.php",{"firstName": firstName,
+                "email": email ,"comment": comment},function(data) {
+                var result = $.parseJSON(data);
+
+                //Checking data returned by php file and display errors accordingly
+
+                if(result[0]!= 0){
+                    $("#firstNameDiv").append("<span class='err' style ='color: red'>"+result[0]+"</span>");
+                }
+                if(result[1]!= 0){
+                    $("#textarea").append("<span class='err' style ='color: red'>"+result[1]+"</span>");
+                }
+                if(result[2]!= 0){
+                    $("#emailDiv").append("<span class='err' style ='color: red'>"+result[2]+"</span>");
+                }
+
+                //checks form submission success
+
+                if(result[0] == 0 && result[1] == 0 && result[2] == 0) {
+
+                    $("form").fadeOut("slow", function () {
+
+                        $("#success").css("margin"," 122px 0 137px 19px").css("visibility","visible");
+
+                    });
+                }
+
+            }, "html");
+
+        });
+
+
+        //Checks resizing of window to adjust header accordingly.
+
+        $(window).resize(function() {
+           if($(window).width()<416 && k==0){
+               $("body").prepend("<div id='mobileContact'>Call: 603-742-2424</div>");
+               k=1;
+
+           }
+
+            if($(window).width()<416 && k==0){
+                $("#menu").mmenu();
+            }
+
+            if($(window).width()>416){
+                $("#mobileContact").remove();
+                k=0;
+            }
+        });
+
+    </script>
+
+    </body>
+
+    </html>

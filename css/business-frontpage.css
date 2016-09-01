@@ -1,0 +1,384 @@
+    /*
+     * Start Bootstrap - Business Frontpage (http://startbootstrap.com/)
+     * Copyright 2013-2016 Start Bootstrap
+     * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+     */
+
+    body {
+        padding-top: 1px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+
+
+    .img-center {
+        margin: 0 auto;
+    }
+
+
+    /* Mobile Version Media Queries */
+
+    @media (max-width: 415px) {
+
+
+        .business-header {
+            height: 150px;
+            width: auto;
+            margin: 0 5px 50px 5px;
+            background: url("../img/hero-bg-mobile.png") center center no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+
+
+        #top{
+            height: 100px;
+            background: url("../img/logo-mobile.png") no-repeat;
+        }
+
+        .navbar{
+            margin-bottom: 0;
+            background-color: #00cc99;
+            color: white;
+            border-radius: 0;
+            border: white;
+            min-height: 0;
+        }
+
+
+        .navbar-toggle{
+            margin-top: -74px;
+
+
+        }
+
+        .navbar-inverse .navbar-toggle {
+            border-color: white;
+        }
+
+        .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+            background-color: white;
+        }
+
+        #top label{
+            display: none;
+        }
+
+        #aptButton{
+            display: none;
+
+        }
+
+        #patientButton{
+            display: none;
+        }
+
+
+        #mobileContact {
+
+            background: #00cc99;
+            padding: 5% 5% 5% 30%;
+            color: white;
+        }
+
+        footer{
+            width: auto;
+            background: url("../img/logo-mobile-footer.png")  50% 10% no-repeat #bfbfbf ;
+            padding: 10px 20px 0 0 ;
+            height: 350px;
+            margin: 0;
+
+        }
+
+        #footerText{
+            padding: 40% 0 5% 10%;
+            color: white;
+            text-align: center;
+        }
+
+        #textarea{
+            margin: 15px 0 15px 0;
+        }
+
+        #button{
+           margin-top: 20px ;
+           width: 100%;
+        }
+
+        #msg{
+            margin: 5% 0 -7% 30%;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        #googleMap{
+            width: auto;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+
+        .tagline {
+            text-shadow: none;
+            color: #8c8c8c;
+            font-size: 1.6em;
+            font-weight: 200;
+            margin-top: 20px;
+        }
+
+        #exp{
+            color: #8c8c8c;
+            font-size: 0.7em;
+        }
+
+        address{
+            display: none;
+        }
+
+        .col-sm-4{
+            background-color: #f2f2f2;
+            padding: 8px;
+        }
+
+        .col-sm-4 h3{
+
+            margin-bottom: 33px;
+        }
+
+        .col-sm-8 p{
+            margin: 10px 10px 40px 10px;
+            color: grey;
+        }
+
+        #success{
+            visibility: hidden;
+            color: darkgreen;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 1.5em;
+
+        }
+
+    }
+
+
+
+    /* Desktop Version  */
+
+    @media (min-width: 416px) {
+
+        .business-header {
+            height: 300px;
+            width: auto;
+            background: url("../img/hero-bg.png") center center no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+
+
+        #top {
+            height: 130px;
+            background: url("../img/logo.png") 20px no-repeat;
+            background-position-y: 18px;
+
+        }
+
+        .navbar{
+            margin-bottom: 0;
+            background-color: #00cc99;
+            color: #FFFFFF;
+            border-radius: 0;
+            border: none;
+
+        }
+
+        .col-sm-8 label{
+
+            padding-top: 20px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 1.2em;
+            margin: 12px;
+
+        }
+
+        .col-sm-8 input[type="radio"]{
+
+            font-family: "Times New Roman", Times, serif;
+            font-size: 1.2em;
+            margin-left: 30px;
+
+        }
+
+        .col-sm-8 textarea{
+            margin: 10px 10px 0 10px;
+            width: 720px;
+        }
+
+
+
+        #yesVal{
+            margin-left: 265px;
+        }
+
+        .form-group{
+            float: left;
+            width: 347px;
+            height: 75px;
+            margin: 0 12px 0 12px;
+        }
+
+
+
+        #subject{
+            margin: 10px 10px 35px 10px;
+            width: 720px;
+        }
+
+        .col-sm-8 button{
+            margin-right: 20px;
+            width: 90px;
+            float: right;
+            height: 40px;
+            border-radius: 8px;
+            background-color: #00cc99;
+            border: none;
+        }
+
+        #msg{
+            margin-top: -10px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .col-sm-8 p{
+            margin: 10px 10px 30px 10px;
+            color: grey;
+        }
+
+        footer{
+            width: auto;
+            background: url("../img/logo-footer.png") 70px no-repeat #bfbfbf ;
+            padding: 20px;
+            height: 60px;
+            margin: 0;
+
+        }
+
+        #footerText{
+            padding: 0 0 20px 110px;
+            color: white;
+        }
+
+        #textarea{
+            margin-bottom: 35px;
+
+        }
+        #textarea span{
+            padding-left: 12px;
+
+        }
+
+        #top label{
+
+            float: right;
+            margin: 20px 60px 0 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #bfbfbf;
+            font-size: 1.5em;
+            font-weight: lighter;
+
+        }
+
+        #aptButton{
+            position: relative;
+            float: right;
+            margin: 60px -212px 10px 0;
+            background-color: #bfbfbf;
+            width: 180px;
+            border: none;
+
+        }
+
+        #patientButton{
+            float: right;
+            margin: 60px -20px 10px 0;
+            background-color: #00cc99;
+            width: 150px;
+            border: none;
+        }
+
+        .form-control{
+            border-radius: 0;
+        }
+
+
+        address{
+            color: #808080;
+            font-weight: 300;
+        }
+
+        .tagline {
+            text-shadow: none;
+            color: #8c8c8c;
+            font-size: 2.5em;
+            font-weight: 200;
+            margin-top: 80px;
+
+        }
+
+        #exp{
+            color: #8c8c8c;
+            font-size: 1.5em;
+
+        }
+
+        #googleMap{
+            width: 350px;
+            height: 200px;
+
+        }
+
+        #success{
+            visibility: hidden;
+            color: darkgreen;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 2em;
+
+        }
+
+
+    }
+
+
+    .navbar-inverse .navbar-brand {
+        color: white;
+    }
+
+    .navbar-inverse .navbar-nav>li>a {
+        color: white;
+        padding-left: 50px;
+        font-size: 1em;
+
+
+    }
+
+    .col-lg-12 p{
+        font-family: "Times New Roman", Times, serif;
+        color: grey;
+        font-size: 1em;
+    }
+
+    .col-lg-12 h1{
+        font-family: "Times New Roman", Times, serif;
+        font-size: 1.8em;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: darkgray;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    ::-webkit-input-placeholder {   color: green;}
